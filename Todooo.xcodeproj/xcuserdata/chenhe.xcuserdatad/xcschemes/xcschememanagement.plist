@@ -12,12 +12,40 @@
 		<key>Todooo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Utilities.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0C6A5D3523CC154700662FA4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0CED3F9123572CBC002638C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0CED3FA423572CBE002638C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0CED3FAF23572CBE002638C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0CED3FBA23572CBE002638C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
