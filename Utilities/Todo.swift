@@ -34,19 +34,25 @@ extension TodoApp {
         
         case .omnifocus:
             // omnifocus:///add?name=Pick%20up%20milk&note=You%20gotta
+            // autosave=true 意味着不显示
             urlString = "omnifocus:///add?"
             urlString += "name=\(title.urlEncoded ?? "")"
             if description.isNotEmpty {
                 urlString += "&note=\(description.urlEncoded ?? "")"
             }
+            if !Defaults.quickEntryEnabled {
+                urlString += "&autosave=true"
+            }
+            
         case .things:
-            // detail at: 
+            // detail at: https://culturedcode.com/things/support/articles/2803573/
             // things:///add?title=A%20new%20task&notes=It's%20an%20URL%3A%20http%3A%2F%2Fjira.in.zhihu.com%2Fbrowse%2FMP-2749
             urlString = "things:///add?"
             urlString += "title=\(title.urlEncoded ?? "")"
             if description.isNotEmpty {
                 urlString += "&notes=\(description.urlEncoded ?? "")"
             }
+            urlString += "&quick-entry=\(Defaults.quickEntryEnabled ? "true" : "false")"
             
         case .twodo:
             // detail at: https://www.2doapp.com/kb/article/url-schemes.html

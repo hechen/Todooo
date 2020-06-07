@@ -15,8 +15,10 @@
 		0C6A5D4323CC154700662FA4 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6A5D2E23CC154700662FA4 /* Utilities.framework */; };
 		0C6A5D4C23CC155A00662FA4 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23E5C23C71A4B008E8C00 /* Defaults.swift */; };
 		0C6A5D4D23CC155A00662FA4 /* NSView+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6A5D2623CC141900662FA4 /* NSView+Color.swift */; };
-		0C6A5D4E23CC155A00662FA4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23E5E23C71A65008E8C00 /* String+.swift */; };
+		0C6A5D4E23CC155A00662FA4 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF23E5E23C71A65008E8C00 /* String+Ex.swift */; };
 		0C6A5D5023CC156700662FA4 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED3FDF23572D9D002638C3 /* Todo.swift */; };
+		0CDFB0AC248CD83100280C21 /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFB0A3248CD6D400280C21 /* ITSwitch.m */; };
+		0CDFB0AD248CD99C00280C21 /* ITSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CDFB0A2248CD6D400280C21 /* ITSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CED3F9623572CBD002638C3 /* Todooo.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 0CED3F9523572CBD002638C3 /* Todooo.entitlements */; };
 		0CED3F9823572CBD002638C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED3F9723572CBD002638C3 /* AppDelegate.swift */; };
 		0CED3F9B23572CBD002638C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CED3F9923572CBD002638C3 /* Main.storyboard */; };
@@ -120,6 +122,9 @@
 		0C6A5D3623CC154700662FA4 /* UtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6A5D3D23CC154700662FA4 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		0C6A5D3F23CC154700662FA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CDFB0A2248CD6D400280C21 /* ITSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITSwitch.h; sourceTree = "<group>"; };
+		0CDFB0A3248CD6D400280C21 /* ITSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITSwitch.m; sourceTree = "<group>"; };
+		0CDFB0AB248CD7CB00280C21 /* Todooo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Todooo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0CED3F9223572CBD002638C3 /* Todooo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todooo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CED3F9523572CBD002638C3 /* Todooo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Todooo.entitlements; sourceTree = "<group>"; };
 		0CED3F9723572CBD002638C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,7 +149,7 @@
 		0CED3FCF23572CBE002638C3 /* Todooo_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Todooo_Extension.entitlements; sourceTree = "<group>"; };
 		0CED3FDF23572D9D002638C3 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		0CF23E5C23C71A4B008E8C00 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
-		0CF23E5E23C71A65008E8C00 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		0CF23E5E23C71A65008E8C00 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,9 +204,10 @@
 		0C6A5D2F23CC154700662FA4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0CDFB0A7248CD74900280C21 /* Views */,
 				0CED3FDF23572D9D002638C3 /* Todo.swift */,
 				0CF23E5C23C71A4B008E8C00 /* Defaults.swift */,
-				0CF23E5E23C71A65008E8C00 /* String+.swift */,
+				0CF23E5E23C71A65008E8C00 /* String+Ex.swift */,
 				0C6A5D2623CC141900662FA4 /* NSView+Color.swift */,
 				0C6A5D3023CC154700662FA4 /* Utilities.h */,
 				0C6A5D3123CC154700662FA4 /* Info.plist */,
@@ -216,6 +222,15 @@
 				0C6A5D3F23CC154700662FA4 /* Info.plist */,
 			);
 			path = UtilitiesTests;
+			sourceTree = "<group>";
+		};
+		0CDFB0A7248CD74900280C21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CDFB0A2248CD6D400280C21 /* ITSwitch.h */,
+				0CDFB0A3248CD6D400280C21 /* ITSwitch.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		0CED3F8923572CBC002638C3 = {
@@ -255,6 +270,7 @@
 				0CED3F9C23572CBD002638C3 /* ViewController.swift */,
 				0CED3F9E23572CBE002638C3 /* Assets.xcassets */,
 				0CED3FA023572CBE002638C3 /* Info.plist */,
+				0CDFB0AB248CD7CB00280C21 /* Todooo-Bridging-Header.h */,
 			);
 			path = Todooo;
 			sourceTree = "<group>";
@@ -314,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6A5D4023CC154700662FA4 /* Utilities.h in Headers */,
+				0CDFB0AD248CD99C00280C21 /* ITSwitch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +461,7 @@
 				TargetAttributes = {
 					0C6A5D2D23CC154700662FA4 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1150;
 					};
 					0C6A5D3523CC154700662FA4 = {
 						CreatedOnToolsVersion = 11.3;
@@ -545,8 +563,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDFB0AC248CD83100280C21 /* ITSwitch.m in Sources */,
 				0C6A5D4C23CC155A00662FA4 /* Defaults.swift in Sources */,
-				0C6A5D4E23CC155A00662FA4 /* String+.swift in Sources */,
+				0C6A5D4E23CC155A00662FA4 /* String+Ex.swift in Sources */,
 				0C6A5D4D23CC155A00662FA4 /* NSView+Color.swift in Sources */,
 				0C6A5D5023CC156700662FA4 /* Todo.swift in Sources */,
 			);
@@ -653,10 +672,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -672,6 +693,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -682,10 +704,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -15,6 +15,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var appListButton: NSPopUpButton!
     @IBOutlet weak var activateButton: NSButton!
     
+    @IBOutlet weak var enableQuickEntry: ITSwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.view.backgroundColor = NSColor.systemGray
@@ -24,6 +26,10 @@ class ViewController: NSViewController {
             appListButton.addItem(withTitle: "\($0)")
         }
         appListButton.selectItem(at: Defaults.activeTodoAppIndex)
+        enableQuickEntry.checked = Defaults.quickEntryEnabled    }
+    
+    @IBAction func toggleQuickEntry(_ sender: ITSwitch!) {        
+        Defaults.quickEntryEnabled = sender.checked
     }
     
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
