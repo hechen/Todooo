@@ -898,7 +898,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.chen.macos.Todooo-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.Todooo.SafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -919,7 +919,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "app.chen.macos.Todooo-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.Todooo.SafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -936,7 +936,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Todooo/Info.plist;
@@ -961,7 +961,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Todooo/Info.plist;

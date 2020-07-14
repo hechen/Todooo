@@ -1,0 +1,13 @@
+git_url("https://github.com/hechen/certificates_todooo.git")
+git_branch("master")
+clone_branch_directly(true)
+
+app_identifier([
+    "app.chen.macos.Todooo",
+])
+
+platform("macos")
+
+username("hechen4815463@163.com")
+
+
