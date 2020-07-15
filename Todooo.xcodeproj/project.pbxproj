@@ -677,7 +677,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -690,7 +690,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.Utilities;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.Todooo.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -709,7 +709,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -722,7 +722,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.Utilities;
+				PRODUCT_BUNDLE_IDENTIFIER = app.chen.macos.Todooo.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -890,6 +890,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Todooo Extension/Todooo_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Todooo Extension/Info.plist";
@@ -911,6 +912,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Todooo Extension/Todooo_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Todooo Extension/Info.plist";
@@ -936,7 +938,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Todooo/Info.plist;
@@ -961,7 +963,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Todooo/Info.plist;
