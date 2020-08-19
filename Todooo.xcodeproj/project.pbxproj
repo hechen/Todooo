@@ -33,6 +33,7 @@
 		0CED3FC923572CBE002638C3 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CED3FC723572CBE002638C3 /* SafariExtensionViewController.xib */; };
 		0CED3FCC23572CBE002638C3 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 0CED3FCB23572CBE002638C3 /* script.js */; };
 		0CED3FCE23572CBE002638C3 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0CED3FCD23572CBE002638C3 /* ToolbarItemIcon.pdf */; };
+		74E63E6A24ED038E000801CF /* TodoooWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E63E6924ED038E000801CF /* TodoooWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		0CED3FDF23572D9D002638C3 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		0CF23E5C23C71A4B008E8C00 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		0CF23E5E23C71A65008E8C00 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		74E63E6924ED038E000801CF /* TodoooWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoooWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +273,7 @@
 				0CED3F9E23572CBE002638C3 /* Assets.xcassets */,
 				0CED3FA023572CBE002638C3 /* Info.plist */,
 				0CDFB0AB248CD7CB00280C21 /* Todooo-Bridging-Header.h */,
+				74E63E6924ED038E000801CF /* TodoooWindowController.swift */,
 			);
 			path = Todooo;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 			files = (
 				0CED3F9D23572CBD002638C3 /* ViewController.swift in Sources */,
 				0CED3F9823572CBD002638C3 /* AppDelegate.swift in Sources */,
+				74E63E6A24ED038E000801CF /* TodoooWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -938,7 +942,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Todooo/Info.plist;
@@ -963,7 +967,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = NM8T9PQ2C4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Todooo/Info.plist;

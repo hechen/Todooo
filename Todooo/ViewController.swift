@@ -19,9 +19,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = NSColor.systemGray
         
-        // prepare data
         TodoApp.allCases.forEach {
             appListButton.addItem(withTitle: "\($0)")
         }
