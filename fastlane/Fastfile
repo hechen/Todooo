@@ -1,0 +1,39 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:mac)
+
+platform :mac do
+  desc "Description of what the lane does"
+  lane :beta do
+  
+    match
+
+    increment_build_number(xcodeproj: "Todooo.xcodeproj")
+
+    gym
+
+    appcenter_upload({
+        api_token: 'd4ababab44e92796f0a5ec0d3557695a533f08da',
+        owner_name: 'hechen.dream-gmail.com',
+        app_name: 'Todooo',
+        file: './build/Todooo.app',
+        dsym: './build/Todooo.app.dSYM.zip'
+    })
+    
+    clean_build_artifacts
+
+  end
+end

@@ -16,6 +16,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var activateButton: NSButton!
     
     @IBOutlet weak var enableQuickEntry: ITSwitch!
+    @IBOutlet weak var helpButton: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,13 @@ class ViewController: NSViewController {
     @IBAction func toggleQuickEntry(_ sender: ITSwitch!) {        
         Defaults.quickEntryEnabled = sender.checked
     }
+    
+    @IBAction func helpButtonClicked(_ sender: Any) {
+        
+        
+        
+    }
+    
     
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
         SFSafariApplication.showPreferencesForExtension(withIdentifier: "app.chen.macos.Todooo-Extension") { error in

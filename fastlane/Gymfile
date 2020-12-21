@@ -1,0 +1,7 @@
+scheme("Todooo")
+export_method("developer-id")
+skip_package_pkg(true)
+installer_cert_name("Developer ID Application: chen he (NM8T9PQ2C4)")
+output_directory("./build")     # store the ipa in this folder
+output_name("Todooo")           # the name of the ipa file
+clean(true)
