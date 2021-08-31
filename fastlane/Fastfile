@@ -30,7 +30,6 @@ platform :mac do
 
     version_number = get_version_number(xcodeproj: "Todooo.xcodeproj", target: "Todooo")
     build_number = get_build_number(xcodeproj: "Todooo.xcodeproj")
-    release_message = "Release Venom #{version_number}(#{build_number}) to Zhihu"
 
     # Fetch Commit Messages
     release_notes = changelog_from_git_commits(
@@ -47,13 +46,8 @@ platform :mac do
     })
     
     clean_build_artifacts
-
-    # remove the build folder.
     FileUtils.rm_r "../build", force: true
-
-    # git_add(path: ".")
-    git_commit(path: ".", message: release_message)
-
+    git_commit(path: ".", message: "Release Todooo #{version_number}(#{build_number})")
     add_git_tag(tag: "#{version_number}(#{build_number})")
     push_to_git_remote()
   end
