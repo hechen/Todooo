@@ -14,26 +14,47 @@
 # update_fastlane
 
 default_platform(:mac)
-
 platform :mac do
   desc "Description of what the lane does"
   lane :beta do
   
     match
 
-    increment_build_number(xcodeproj: "Todooo.xcodeproj")
+    build_number = get_build_number(xcodeproj: "Todooo.xcodeproj")
+    increment_build_number(
+      build_number: Integer(build_number) + 1,
+      xcodeproj: "Todooo.xcodeproj"
+    )
 
     gym
+
+    version_number = get_version_number(xcodeproj: "Todooo.xcodeproj", target: "Todooo")
+    build_number = get_build_number(xcodeproj: "Todooo.xcodeproj")
+    release_message = "Release Venom #{version_number}(#{build_number}) to Zhihu"
+
+    # Fetch Commit Messages
+    release_notes = changelog_from_git_commits(
+      commits_count: 1,
+    )
 
     appcenter_upload({
         api_token: 'd4ababab44e92796f0a5ec0d3557695a533f08da',
         owner_name: 'hechen.dream-gmail.com',
         app_name: 'Todooo',
+        release_notes: release_notes,
         file: './build/Todooo.app',
         dsym: './build/Todooo.app.dSYM.zip'
     })
     
     clean_build_artifacts
 
+    # remove the build folder.
+    FileUtils.rm_r "../build", force: true
+
+    # git_add(path: ".")
+    git_commit(path: ".", message: release_message)
+
+    add_git_tag(tag: "#{version_number}(#{build_number})")
+    push_to_git_remote()
   end
 end
