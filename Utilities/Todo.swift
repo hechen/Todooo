@@ -52,7 +52,7 @@ extension TodoApp {
             if description.isNotEmpty {
                 urlString += "&notes=\(description.urlEncoded ?? "")"
             }
-            urlString += "&quick-entry=\(Defaults.quickEntryEnabled ? "true" : "false")"
+            urlString += "&show-quick-entry=\(Defaults.quickEntryEnabled ? "true" : "false")"
             
         case .twodo:
             // detail at: https://www.2doapp.com/kb/article/url-schemes.html
