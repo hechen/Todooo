@@ -4,7 +4,7 @@
 
 Todooo is a simple Safari Extension to enhance your Todo applications, which include Omnifocus, Things3.
 
-### 1. Open Todooo, Click to activate safari preference panel.
+### 1. Open Todooo, Click to activate the safari preference panel.
 
 ![Main](.assets/main.png)
 
@@ -21,7 +21,3 @@ Todooo is a simple Safari Extension to enhance your Todo applications, which inc
 #### 3.2 Things
 
 ![Things](.assets/things.png)
-
-## Credits
-
-[ITSwitch](https://github.com/iluuu1994/ITSwitch)
