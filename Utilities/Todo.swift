@@ -65,6 +65,7 @@ extension TodoApp {
                 let action = "url:" + description
                 urlString += "&action=\(action.urlEncoded ?? "")"
             }
+            urlString += "&useQuickEntry=\(Defaults.quickEntryEnabled ? 1 : 0)"
         }
         if urlString.isNotEmpty, let url = URL(string: urlString) {
             NSWorkspace.shared.open(url)
